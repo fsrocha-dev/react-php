@@ -1,11 +1,11 @@
 <?php
 include("ClassConnect.php");
 
-class Cell extends ClassConnect{
+class ClassCell extends ClassConnect{
     public function showCell()
     {
         $FetchCell=$this->ConnectDB()->prepare("SELECT * FROM celulares");
-        $Fetch->execute();
+        $FetchCell->execute();
 
         $Arr=[];
         $I=0;
